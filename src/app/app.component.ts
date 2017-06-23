@@ -7,9 +7,7 @@ import { Http } from '@angular/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-}
-/*export class AppComponent {
+
   myData: Array<any>;
 
   constructor(private http:Http) {
@@ -19,4 +17,5 @@ export class AppComponent {
       .subscribe(res => this.myData = res);
 
   }
-}*/
+
+}
