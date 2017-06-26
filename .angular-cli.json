@@ -19,9 +19,13 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "./app/theme/material.indigo-pink.min.css",
+        "./app/theme/font-icons.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "./app/theme/material.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

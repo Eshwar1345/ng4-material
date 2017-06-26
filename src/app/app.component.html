@@ -16,7 +16,7 @@
   <li>
     <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
   </li>
-</ul>-->
+</ul>
 <md-toolbar color="primary">
 
     <span>MyCompany</span>
@@ -43,3 +43,77 @@
   </md-card-actions>
   
 </md-card>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer demo-3">
+         <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Material Design</span>
+            <nav class="mdl-navigation">
+               <a class="mdl-navigation__link" href="">Home</a>
+               <a class="mdl-navigation__link" href="">Features</a>
+               <a class="mdl-navigation__link" href="">About Us</a>
+               <a class="mdl-navigation__link" href="">Log Out</a>
+            </nav>
+         </div>
+         <main class="mdl-layout__content">
+            <div class="page-content">Hello World!</div>
+         </main>
+      </div>-->
+      <!-- Always shows a header, even in smaller screens. 
+   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+         <div class="mdl-layout__header-row">-->
+            <!-- Title 
+            <span class="mdl-layout-title">HTML5 Tutorial</span>-->
+            <!-- Add spacer, to align navigation to the right 
+            <div class="mdl-layout-spacer"></div>-->
+            <!-- Navigation 
+            <nav class="mdl-navigation">
+               <a class="mdl-navigation__link" href="" style="color:gray">Home</a>
+               <a class="mdl-navigation__link" href="" style="color:gray">About</a>
+            </nav>
+         </div>
+      </header>
+      <div class="mdl-layout__drawer">
+         <span class="mdl-layout-title">HTML5 Tutorial</span>
+         <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Home</a>
+            <a class="mdl-navigation__link" href="">About</a>    
+         </nav>
+      </div>
+      <main class="mdl-layout__content">
+         <div class="page-content">Hello World!</div>
+      </main>
+   </div>-->
+   <!-- The drawer is always open in large screens. The header is always shown,  even in small screens. -->
+   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+      <header class="mdl-layout__header">
+         <!-- Top row, always visible -->
+         <div class="mdl-layout__header-row">
+         <!-- Title -->
+            <span class="mdl-layout-title">HTML5 Tutorial</span>
+         </div>
+         <!-- Tabs -->
+         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
+            <a href="#scroll-tab-2" class="mdl-layout__tab">Tab 2</a>
+            <a href="#scroll-tab-3" class="mdl-layout__tab">Tab 3</a>
+         </div>
+      </header>
+      <div class="mdl-layout__drawer">
+         <span class="mdl-layout-title">HTML5 Tutorial</span>
+         <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Home</a>
+            <a class="mdl-navigation__link" href="">About</a>
+         </nav>
+      </div>
+      <main class="mdl-layout__content">
+         <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+            <div class="page-content">Tab 1 Contents</div>
+         </section>
+         <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+            <div class="page-content">Tab 2 Contents</div>
+         </section>
+         <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+            <div class="page-content">Tab 3 Contents</div>
+         </section>
+      </main>
+   </div>
