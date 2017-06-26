@@ -1,45 +1,218 @@
-<!--The whole content below can be removed with the new code.
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=" />
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+  <header class="mdl-layout__header">
+    <!-- Top row, always visible -->
+    <div class="mdl-layout__header-row">
+    <!-- Title -->
+      <span class="mdl-layout-title">HTML5 Tutorial</span>
+    </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
+      <a href="#scroll-tab-2" class="mdl-layout__tab">Tab 2</a>
+      <a href="#scroll-tab-3" class="mdl-layout__tab">Tab 3</a>
+ </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">HTML5 Tutorial</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="index.html">Home</a>
+      <a class="mdl-navigation__link" href="index.html">About</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+      <div class="page-content">
+        <table border="0">
+          <tbody>
+            <tr>
+               <td><button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"><i class="material-icons">add</i></button></td>
+               <td><button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">add</i></button></td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td>Colored fab (circular) display effect</td>
+               <td>Colored fab (circular) with ripple display effect</td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td><button class="mdl-button mdl-js-button mdl-button--fab"><i class="material-icons">add</i></button></td>
+               <td><button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect"><i class="material-icons">add</i></button></td>
+               <td><button class="mdl-button mdl-js-button mdl-button--fab" disabled><i class="material-icons">add</i></button></td>
+            </tr>
+            <tr>
+               <td>Plain fab (circular) display effect</td>
+               <td>Plain fab (circular) with ripple display effect</td>
+               <td>Plain fab (circular) and disabled</td>
+            </tr>
+            <tr>
+               <td><button class="mdl-button mdl-js-button mdl-button--raised"><i class="material-icons">add</i></button></td>
+               <td><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"><i class="material-icons">add</i></button></td>
+               <td><button class="mdl-button mdl-js-button mdl-button--raised" disabled><i class="material-icons">add</i></button></td>
+            </tr>
+            <tr>
+               <td>Raised button</td>
+               <td>Raised button with ripple display effect</td>
+               <td>Raised button and disabled</td>
+            </tr>
+            <tr>
+               <td><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"><i class="material-icons">add</i></button></td>
+               <td><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"><i class="material-icons">add</i></button></td>
+               <td><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><i class="material-icons">add</i></button></td>
+            </tr>
+            <tr>
+               <td>Colored Raised button</td>
+               <td>Accent-colored Raised button</td>
+               <td>Accent-colored raised button with ripple effect</td>
+            </tr>
+            <tr>
+               <td><button class="mdl-button mdl-js-button"><i class="material-icons">add</i></button></td>
+               <td><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">add</i></button></td>
+               <td><button class="mdl-button mdl-js-button" disabled><i class="material-icons">add</i></button></td>
+            </tr>
+            <tr>
+               <td>Flat button</td>
+               <td>Flat button with ripple effect</td>
+               <td>Disabled flat button</td>
+            </tr>
+            <tr>
+               <td><button class="mdl-button mdl-js-button mdl-button--primary"><i class="material-icons">add</i></button></td>
+               <td><button class="mdl-button mdl-js-button mdl-button--accent"><i class="material-icons">add</i></button></td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td>Primary Flat button</td>
+               <td>Accent-colored Flat button</td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td><button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">add</i></button></td>
+               <td><button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored"><i class="material-icons">add</i></button></td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td>Icon button</td>
+               <td>Colored Icon button</td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td><button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab"><i class="material-icons">add</i></button></td>
+               <td><button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored"><i class="material-icons">add</i></button></td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td>Mini Colored fab (circular) display effect</td>
+               <td>Mini Colored fab (circular) with ripple display effect</td>
+               <td> </td>
+            </tr>
+            </tbody>
+          </table>
+      </div>
+      <footer class="mdl-mega-footer">
+        <div class="mdl-mega-footer__top-section">
+           <div class="mdl-mega-footer__left-section">
+              <button class="mdl-mega-footer__social-btn">1</button>
+              <button class="mdl-mega-footer__social-btn">2</button>
+              <button class="mdl-mega-footer__social-btn">3</button>
+           </div>
+           <div class="mdl-mega-footer__right-section">
+              <a href="">Link 1</a>
+              <a href="">Link 2</a>
+              <a href="">Link 3</a>
+           </div>
+        </div>
+        <div class="mdl-mega-footer__middle-section">
+           <div class="mdl-mega-footer__drop-down-section">
+              <h1 class="mdl-mega-footer__heading">Heading </h1>
+              <ul class="mdl-mega-footer__link-list">
+                 <li><a href="">Link A</a></li>
+                 <li><a href="">Link B</a></li>
+              </ul>
+           </div>
+           <div class="mdl-mega-footer__drop-down-section">
+              <h1 class="mdl-mega-footer__heading">Heading </h1>
+              <ul class="mdl-mega-footer__link-list">
+                 <li><a href="">Link C</a></li>
+                 <li><a href="">Link D</a></li>
+              </ul>
+           </div>
+        </div>
+        <div class="mdl-mega-footer__bottom-section">
+           <div class="mdl-logo">
+              Bottom Section
+           </div>
+           <ul class="mdl-mega-footer__link-list">
+              <li><a href="">Link A</a></li>
+              <li><a href="">Link B</a></li>
+           </ul>
+        </div>
+      </footer>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+      <div class="page-content">
+        <span class="material-icons mdl-badge" data-badge="1">account_box</span>
+        <span class="material-icons mdl-badge" data-badge="★">account_box</span>
+        <span class="mdl-badge" data-badge="4">Unread Messages</span>
+        <span class="mdl-badge" data-badge="⚑">Rating</span>
+        <a href="#" class="mdl-badge" data-badge="5">Inbox</a>
+      </div>
+      <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+           <div class="mdl-logo">
+              Copyright Information
+           </div>
+           <ul class="mdl-mini-footer__link-list">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>
+           </ul>
+        </div>
+        <div class="mdl-mini-footer__right-section">
+           <button class="mdl-mini-footer__social-btn">1</button>
+           <button class="mdl-mini-footer__social-btn">2</button>
+           <button class="mdl-mini-footer__social-btn">3</button>
+        </div>
+      </footer>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+      <div class="page-content">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--1-col graybox">1</div>
+          <div class="mdl-cell mdl-cell--1-col graybox">2</div>
+          <div class="mdl-cell mdl-cell--1-col graybox">3</div>
+          <div class="mdl-cell mdl-cell--1-col graybox">4</div>
+          <div class="mdl-cell mdl-cell--1-col graybox">5</div>
+          <div class="mdl-cell mdl-cell--1-col graybox">6</div>
+          <div class="mdl-cell mdl-cell--1-col graybox">7</div>
+          <div class="mdl-cell mdl-cell--1-col graybox">8</div>
+          <div class="mdl-cell mdl-cell--1-col graybox">9</div>
+          <div class="mdl-cell mdl-cell--1-col graybox">10</div>
+          <div class="mdl-cell mdl-cell--1-col graybox">11</div>
+          <div class="mdl-cell mdl-cell--1-col graybox">12</div>
+        </div>
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--4-col graybox">1</div>
+          <div class="mdl-cell mdl-cell--4-col graybox">2</div>
+          <div class="mdl-cell mdl-cell--4-col graybox">3</div>
+        </div>
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col graybox">6</div>
+          <div class="mdl-cell mdl-cell--4-col graybox">4</div>
+          <div class="mdl-cell mdl-cell--2-col graybox">2</div>
+        </div>
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet graybox">6 on desktop, 8 on tablet</div>
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet graybox">4 on desktop, 6 on tablet</div>
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone graybox">2 on desktop, 4 on phone</div>
+        </div>
+      </div>
+
+      <!-- Progress Bars -->
+      <h4>Default Progress bar</h4>
+      <div id="progressbar1" class="mdl-progress mdl-js-progress"></div>
+      <h4>Indeterminate Progress bar</h4>
+      <div id="progressbar2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+      <h4>Buffering Progress bar</h4>
+      <div id="progressbar3" class="mdl-progress mdl-js-progress"></div>
+    </section>
+  </main>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
-  </li>
-</ul>-->
-<md-toolbar color="primary">
-
-    <span>MyCompany</span>
-    <span class="example-spacer"></span>
-    <button md-button [mdMenuTriggerFor]="appMenu"><md-icon>menu</md-icon> Menu</button>
-    
-</md-toolbar>
-
-<md-menu #appMenu="mdMenu">
-  <button md-menu-item> Settings </button>
-  <button md-menu-item> Help </button>
-</md-menu>
-
-<md-card *ngFor="let data of (myData ? myData.slice(0,10): []); let i = index">
-
-  <img md-card-image src="{{ data.url }}">
-  <md-card-header>
-    <md-card-title>{{ data.title }}</md-card-title>
-  </md-card-header>
-
-  <md-card-actions>
-    <button md-button>LIKE</button>
-    <button md-button>SHARE</button>
-  </md-card-actions>
-  
-</md-card>

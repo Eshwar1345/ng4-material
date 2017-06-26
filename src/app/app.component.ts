@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 
+//import { MaterialProgress } from './theme/material.min.js';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,14 +10,14 @@ import { Http } from '@angular/http';
 })
 export class AppComponent {
 
-  myData: Array<any>;
-
-  constructor(private http:Http) {
-    
-    this.http.get('https://jsonplaceholder.typicode.com/photos')
-      .map(response => response.json())
-      .subscribe(res => this.myData = res);
-
+  ngOnInit() {
+    document.querySelector('#progressbar1').addEventListener('mdl-componentupgraded', function() {
+      this.MaterialProgress.setProgress(44);
+    });
+    document.querySelector('#progressbar3').addEventListener('mdl-componentupgraded', function() {
+      this.MaterialProgress.setProgress(33);
+      this.MaterialProgress.setBuffer(87);
+    });
   }
 
 }
